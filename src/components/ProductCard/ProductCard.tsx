@@ -1,6 +1,7 @@
 import { Product } from '@/types/interfaces'
 import Image from 'next/image'
 import React from 'react'
+import AddToCardBtn from '../AddtoCard/AddToCardBtn'
 
 interface Props{
     product:Product,
@@ -19,6 +20,7 @@ export default function ProductCard(props:Props) {
           <div className='p-2'>
               <h6 className='text-center text-slate-600'>{props.product.name}</h6>
               <p className='text-center text-slate-600'>{props.product.price}$ </p>
+              <AddToCardBtn product={props.product}/>
               
           </div>
       </div>
