@@ -9,7 +9,7 @@ export default function () {
       <Link className="text-sky-600" href={"/"}>
         Home
       </Link>
-      <Link className="ml-auto mr-4" href={"/cart"}>
+      <Link className="ml-auto mr-4" href={'/CartPageItem'}>
         <Cartbtn />
       </Link>
     </header>
