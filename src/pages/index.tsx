@@ -1,14 +1,23 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+import Header from '@/components/Header/Header'
+import { prodcutData } from './mock/productData'
+import ProductCard from '@/components/ProductCard/ProductCard'
+
 
 export default function Home() {
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-    >
-     
+    <>
+      <Header />
+    <main className={'container'}>
+        <div>
+          {
+            prodcutData.map((item) =>
+              <ProductCard key={item.id} product={item} />
+            )
+          } 
+      </div>
     </main>
+  
+    </>
   )
 }
