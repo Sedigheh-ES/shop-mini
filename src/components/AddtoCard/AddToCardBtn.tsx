@@ -21,8 +21,8 @@ export default function AddToCardBtn(props: Props) {
 
   return (
       <QtyBtn onDecrease={() => dispatch(decrement(props.product))}
-          onIcrease={() => dispatch(increment(props.product))}
-          qty={qty}
+             onIcrease={() => dispatch(increment(props.product))}
+              qty={qty}
       />
   )
 }
