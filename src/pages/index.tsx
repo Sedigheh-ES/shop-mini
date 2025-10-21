@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <Header />
     <main className={'container'}>
-        <div>
+        <div className='flex '>
           {
             prodcutData.map((item) =>
               <ProductCard key={item.id} product={item} />
